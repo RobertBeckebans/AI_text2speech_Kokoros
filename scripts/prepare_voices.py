@@ -16,8 +16,13 @@ os.makedirs("data", exist_ok=True)
 
 voices = [
     #"af",
+    "af_alloy",
+    "af_aoede",
     "af_bella",
+    "af_jessica",
+    "af_kore",
     "af_nicole",
+    "af_nova",
     "af_sarah",
     "af_sky",
     "am_adam",
