@@ -15,7 +15,7 @@ import os
 os.makedirs("data", exist_ok=True)
 
 voices = [
-    "af",
+    #"af",
     "af_bella",
     "af_nicole",
     "af_sarah",
@@ -30,16 +30,16 @@ voices = [
 voices_json = {}
 #pattern = "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main/voices/{voice}.pt"
 # in case in China unable to access huggingface.co
-pattern = "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/{voice}.pt"
+#pattern = "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/{voice}.pt"
 for voice in voices:
-    url = pattern.format(voice=voice)
-    print(f"Downloading {url}")
-    r = requests.get(url)
-    content = io.BytesIO(r.content)
+    #url = pattern.format(voice=voice)
+    #print(f"Downloading {url}")
+    #r = requests.get(url)
+    #content = io.BytesIO(r.content)
     # save the content to a file
-    with open(f"data/{voice}.pt", "wb") as f:
-        f.write(content.read())
-    content.close()
+    #with open(f"data/{voice}.pt", "wb") as f:
+    #    f.write(content.read())
+    #content.close()
 
     voice_data: np.ndarray = torch.load(f"data/{voice}.pt", weights_only=False).numpy()
     print(f"voice data: {voice_data.shape}")
