@@ -14,8 +14,9 @@ import os
 
 os.makedirs("data", exist_ok=True)
 
+"""
 voices = [
-    #"af",
+    "af",
     "af_alloy",
     "af_aoede",
     "af_bella",
@@ -23,6 +24,21 @@ voices = [
     "af_kore",
     "af_nicole",
     "af_nova",
+    "af_sarah",
+    "af_sky",
+    "am_adam",
+    "am_michael",
+    "bf_emma",
+    "bf_isabella",
+    "bm_george",
+    "bm_lewis",
+]
+"""
+
+voices = [
+    "af",
+    "af_bella",
+    "af_nicole",
     "af_sarah",
     "af_sky",
     "am_adam",
